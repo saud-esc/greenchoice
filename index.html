@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-friendly Product Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Eco-friendly Product Comparison</h1>
+        <p>Compare sustainable products and make better choices for the planet.</p>
+    </header>
+    
+    <main>
+        <section class="filters">
+            <h2>Filter Products</h2>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="cleaning">Household Cleaning</option>
+                <option value="personal-care">Personal Care</option>
+                <option value="fashion">Sustainable Fashion</option>
+            </select>
+
+            <label for="packaging">Packaging:</label>
+            <select id="packaging">
+                <option value="all">All</option>
+                <option value="recyclable">Recyclable</option>
+                <option value="biodegradable">Biodegradable</option>
+            </select>
+        </section>
+
+        <section id="product-list" class="product-list">
+            <h2>Product Comparison</h2>
+            <!-- Products will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
