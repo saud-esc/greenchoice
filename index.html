@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco-friendly Product Comparison</title>
+    <title>Eco-Friendly Product Comparison</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Eco-friendly Product Comparison</h1>
-        <p>Compare sustainable products and make better choices for the planet.</p>
+        <h1>Eco-Friendly Product Comparison</h1>
+        <p>Find and compare eco-friendly products that suit your needs.</p>
     </header>
-    
-    <main>
-        <section class="filters">
-            <h2>Filter Products</h2>
-            <label for="category">Category:</label>
-            <select id="category">
-                <option value="all">All</option>
-                <option value="cleaning">Household Cleaning</option>
-                <option value="personal-care">Personal Care</option>
-                <option value="fashion">Sustainable Fashion</option>
-            </select>
 
-            <label for="packaging">Packaging:</label>
-            <select id="packaging">
-                <option value="all">All</option>
-                <option value="recyclable">Recyclable</option>
-                <option value="biodegradable">Biodegradable</option>
-            </select>
+    <main>
+        <section class="product-comparison">
+            <h2>Product Comparison</h2>
+            <div class="product">
+                <h3>Product 1</h3>
+                <ul>
+                    <li>Ingredient: Natural</li>
+                    <li>Packaging: Recyclable</li>
+                    <li>Ethical Sourcing: Yes</li>
+                </ul>
+            </div>
+            <div class="product">
+                <h3>Product 2</h3>
+                <ul>
+                    <li>Ingredient: Organic</li>
+                    <li>Packaging: Biodegradable</li>
+                    <li>Ethical Sourcing: Yes</li>
+                </ul>
+            </div>
+            <div class="product">
+                <h3>Product 3</h3>
+                <ul>
+                    <li>Ingredient: Plant-based</li>
+                    <li>Packaging: Reusable</li>
+                    <li>Ethical Sourcing: Yes</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="product-list" class="product-list">
-            <h2>Product Comparison</h2>
-            <!-- Products will be dynamically inserted here -->
+        <section class="upload-section">
+            <h2>Upload Your Product</h2>
+            <form id="upload-form">
+                <label for="file-input">Upload a picture of the product:</label>
+                <input type="file" id="file-input" accept="image/*" />
+                <br><br>
+                <label for="qr-input">Scan QR Code:</label>
+                <input type="text" id="qr-input" placeholder="Enter QR Code Data" />
+                <button type="button" onclick="scanQRCode()">Scan QR Code</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Eco-Friendly Comparison. All rights reserved.</p>
+    </footer>
 
     <script src="scripts.js"></script>
 </body>
 </html>
+
